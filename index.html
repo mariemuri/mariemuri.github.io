@@ -12,14 +12,14 @@ body,h1,h2,h3,h4,h5 {font-family: "Proxima Nova", sans-serif}
 
 <title>Mariana & Murilo, 28/01/2023</title>
 </head>
-<body>
+<body onload="startParallax()" onscroll="startParallax()">
 
 <div class="topnav">
   <a class="disabled"> Mariana e Murilo</a>
-  <a class="active" href="index.html"><i class="fas fa-home"></i> Home</a>
-  <a class="active" href="#horarios"><i class="fa-solid fa-clock"></i> Horários</a>
-  <a class="active" href="#lista_presentes"><i class="fa-solid fa-gift"></i> Lista de Presentes</a>
-  <a class="active" href="#mapa"><i class="fa-solid fa-map-location"></i> Mapa</a>
+  <a class="active" onclick="stopParallax()" href="index.html"><i class="fas fa-home"></i> Home</a>
+  <a class="active" onclick="stopParallax()" href="#horarios"><i class="fa-solid fa-clock"></i> Horários</a>
+  <a class="active" onclick="stopParallax()" href="#lista_presentes"><i class="fa-solid fa-gift"></i> Lista de Presentes</a>
+  <a class="active" onclick="stopParallax()" href="#mapa"><i class="fa-solid fa-map-location"></i> Mapa</a>
 
 
 </div>
@@ -60,14 +60,32 @@ body,h1,h2,h3,h4,h5 {font-family: "Proxima Nova", sans-serif}
 <!-- js code for parallax effect -->
 <script>
 	const images = document.getElementsByClassName("hero_img");
-
-	new simpleParallax(images, {
-	  delay: 0.6,
-	  transition: "cubic-bezier(0,0,0,1)",
-	  orientation: "down",
-	  scale: 1.8,
-	  overflow: true
-});
+	let PARALLAX_STATE = true;
+	var instance = new simpleParallax(images, {
+												delay: 0.6,
+										  	transition: "cubic-bezier(0,0,0,1)",
+										  	orientation: "down",
+										  	scale: 1.8,
+										  	overflow: true
+											});
+	function startParallax(){
+		if (PARALLAX_STATE != true){
+		console.log('Parallax Started!')
+			var instance = new simpleParallax(images, {
+		  												delay: 0.6,
+													  	transition: "cubic-bezier(0,0,0,1)",
+													  	orientation: "down",
+													  	scale: 1.8,
+													  	overflow: true
+														});
+		PARALLAX_STATE = true;
+		}
+	}
+	function stopParallax(){
+	console.log('Parallax Stoped!')
+	instance.destroy();
+	PARALLAX_STATE = false;
+	}
 </script>
 
 <!-- js code for countdown -->
