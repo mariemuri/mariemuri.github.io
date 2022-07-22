@@ -14,34 +14,49 @@ body,h1,h2,h3,h4,h5 {font-family: "Proxima Nova", sans-serif}
 </head>
 <body>
 
-	<div id="constructionsign">    
-    <div id="sign_text"><i class="fa-solid fa-person-digging"></i> Em Construção <i class="fa-solid fa-person-digging"></i></div>
+<div class="topnav">
+  <a class="disabled"> Mariana e Murilo</a>
+  <a class="active" href="index.html"><i class="fas fa-home"></i> Home</a>
+  <a class="active" href="#horarios"><i class="fa-solid fa-clock"></i> Horários</a>
+  <a class="active" href="#lista_presentes"><i class="fa-solid fa-gift"></i> Lista de Presentes</a>
+  <a class="active" href="#mapa"><i class="fa-solid fa-map-location"></i> Mapa</a>
+
+
+</div>
+
+<!-- <div id="constructionsign">    
+<div id="sign_text"><p><i class="fa-solid fa-person-digging"></i> &emsp; Em Construção &emsp; <i class="fa-solid fa-person-digging"></i></p></div>
+</div> -->
+
+
+<div class="hero">
+	<div id="countdown_div">
+	<p id="countdown"></p>
 	</div>
+	<img class="hero_img" src="./resources/bg.jpg" alt="Paisagem">
+</div>
 
-<i class="fa-solid fa-person-digging"></i>
-<div class="hero"><img class="hero_img" src="./resources/bg.jpg" alt="image"></div>
+<div  class="spacing">
+</div>
+<a id="horarios" class="anchor"></a>
 
-	<main>
-		<article>
-			<h2>Vorwort des Vorstands <i class="fa-solid fa-person-digging"></i></h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto debitis deserunt dicta illum impedit ipsum natus possimus quaerat, recusandae similique sint vitae, voluptate. Aspernatur est itaque nihil nisi voluptatum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto debitis deserunt dicta illum impedit ipsum natus possimus quaerat, recusandae similique sint vitae, voluptate. Aspernatur est itaque nihil nisi voluptatum.</p>
+<div class="hero">
+	<img class="hero_img" src="./resources/mari_muri_1.jpg" alt="Mari e Muri 1">
+</div>
 
-			<h3>I am a h3</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto debitis deserunt dicta illum impedit ipsum natus possimus quaerat, recusandae similique sint vitae, voluptate. Aspernatur est itaque nihil nisi voluptatum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto debitis deserunt dicta illum impedit ipsum natus possimus quaerat, recusandae similique sint vitae, voluptate. Aspernatur est itaque nihil nisi voluptatum.</p>
+<div  id="lista_presentes" class="spacing">
+</div>
+<div class="hero">
+	<img class="hero_img" src="./resources/mari_muri_2.jpg" alt="Mari e Muri 2">
+</div>
 
-			<h3>I am a h3</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto debitis deserunt dicta illum impedit ipsum natus possimus quaerat, recusandae similique sint vitae, voluptate. Aspernatur est itaque nihil nisi voluptatum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto debitis deserunt dicta illum impedit ipsum natus possimus quaerat, recusandae similique sint vitae, voluptate. Aspernatur est itaque nihil nisi voluptatum.</p>
+<div  id="mapa" class="spacing">
+</div>
+<div class="hero">
+	<img class="hero_img" src="./resources/mari_muri_3.jpg" alt="Mari e Muri 3">
+</div>
 
-			<h3>I am a h3</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto debitis deserunt dicta illum impedit ipsum natus possimus quaerat, recusandae similique sint vitae, voluptate. Aspernatur est itaque nihil nisi voluptatum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto debitis deserunt dicta illum impedit ipsum natus possimus quaerat, recusandae similique sint vitae, voluptate. Aspernatur est itaque nihil nisi voluptatum.</p>
-		</article>
-		
-	</main>
-
+<!-- js code for parallax effect -->
 <script>
 	const images = document.getElementsByClassName("hero_img");
 
@@ -49,7 +64,41 @@ body,h1,h2,h3,h4,h5 {font-family: "Proxima Nova", sans-serif}
 	  delay: 0.1,
 	  transition: "cubic-bezier(0,0,0,1)",
 	  orientation: "down",
-	  scale: 1.3
+	  scale: 1.8,
+	  overflow: true
 });
+</script>
+
+<!-- js code for countdown -->
+<script>
+// Source: https://www.w3schools.com/howto/howto_js_countdown.asp
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 28, 2023 10:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById(id="countdown").innerHTML = "Faltam: " + days + " Dias " + hours + " Horas "
+  + minutes + " Minutos " + seconds + " Segundos ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById(id="countdown").innerHTML = "Chegooou!";
+  }
+}, 1000);
 </script>
 </body>
