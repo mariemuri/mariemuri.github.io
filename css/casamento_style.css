@@ -95,6 +95,9 @@ body {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   top: 10%;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 7px;
+  padding: 20px;
 }
 
 #countdown {
@@ -180,13 +183,6 @@ input.submit_button:hover {
   top: 20px;
 }
 
-.side-layout {
-    margin-left: 0;
-    margin-right: 0;
-    text-align: center;
-}
-
-
 #lista_container{
   display: block;
   position: absolute;
@@ -204,7 +200,6 @@ input.submit_button:hover {
   z-index: 9;
   overflow:auto;
   background-color: rgba(255, 255, 255, 0.65);
-  font-size: 16pt;
   border-radius: 7px;
   margin-bottom: 50px;
   font-size: 20pt;
@@ -228,10 +223,16 @@ input.submit_button:hover {
   z-index: 9;
   overflow:auto;
   background-color: rgba(255, 255, 255, 0.65);
-  font-size: 16pt;
   border-radius: 7px;
   margin-bottom: 50px;
   font-size: 20pt;
   font-weight: bold;
   padding: 20px;
+}
+
+.foot-layout {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    height: fit-content;
 }
