@@ -180,19 +180,6 @@
        apply_no_weight="true"
        apply_with_weight="true"
        only_selected="false" />
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter1504"
-       x="-0.0035072451"
-       width="1.0070145"
-       y="-0.0076020998"
-       height="1.0152042">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.030889775"
-         id="feGaussianBlur1506" />
-    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -243,7 +230,7 @@
        transform="translate(0,1.0583333)"
        style="display:inline">
       <rect
-         style="opacity:0.5;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:bevel;paint-order:fill markers stroke"
+         style="opacity:0.5;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:bevel;paint-order:fill markers stroke"
          id="rect995"
          width="256.21027"
          height="258.09766"
@@ -551,36 +538,6 @@
            y="217.79338"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4px;line-height:1;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;fill:#47230a;fill-opacity:1;stroke-width:0.264583"
            id="tspan887" /></text>
-      <g
-         id="g1189"
-         transform="translate(0.93785532,-3.2482234)">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4px;line-height:0;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;fill:#47230a;fill-opacity:1;stroke-width:0.264583;stroke-linejoin:round;filter:url(#filter1504)"
-           x="160.49338"
-           y="165.84409"
-           id="text1755"
-           transform="rotate(1.068091,-49.115681,500.35537)"><tspan
-             sodipodi:role="line"
-             id="tspan1753"
-             x="160.49338"
-             y="165.84409"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7px;line-height:1;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;fill:#47230a;fill-opacity:1;stroke-width:0.264583">Villagio</tspan><tspan
-             sodipodi:role="line"
-             x="160.49338"
-             y="172.84409"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7px;line-height:1;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;fill:#47230a;fill-opacity:1;stroke-width:0.264583"
-             id="tspan1759">Alvorada</tspan></text>
-        <rect
-           style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke"
-           id="rect1115"
-           width="36.115623"
-           height="14.948958"
-           x="148.47481"
-           y="163.20714"
-           rx="1.0000006"
-           ry="1.0000006" />
-      </g>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.5px;line-height:2.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;fill:#47230a;fill-opacity:1;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none"
@@ -675,6 +632,35 @@
          cx="147.13438"
          cy="165.077"
          r="0.89999998" />
+      <g
+         id="g1014">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke"
+           id="rect1115"
+           width="36.115623"
+           height="14.948958"
+           x="149.84081"
+           y="159.95891"
+           rx="1.0000006"
+           ry="1.0000006" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.59819px;line-height:0;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;fill:#47230a;fill-opacity:1;stroke-width:0.264583;stroke-linejoin:round"
+           x="167.68283"
+           y="166.41316"
+           id="text1000"
+           transform="rotate(-0.05312486)"><tspan
+             sodipodi:role="line"
+             x="167.68283"
+             y="166.41316"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.59819px;line-height:1;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;fill:#47230a;fill-opacity:1;stroke-width:0.264583"
+             id="tspan998">Villagio</tspan><tspan
+             sodipodi:role="line"
+             x="167.68283"
+             y="174.01135"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.59819px;line-height:1;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;fill:#47230a;fill-opacity:1;stroke-width:0.264583"
+             id="tspan1004">Alvorada</tspan></text>
+      </g>
     </g>
   </g>
 </svg>
