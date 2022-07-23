@@ -7,7 +7,7 @@
 <script src="./js/simpleParallax.js"></script>
 <script src="https://kit.fontawesome.com/68f46a3fcb.js" crossorigin="anonymous"></script>
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Proxima Nova", sans-serif}
+body,h1,h2,h3,h4,h5,input {font-family: "Proxima Nova", sans-serif}
 </style>
 
 <title>Mariana & Murilo, 28/01/2023</title>
@@ -55,7 +55,37 @@ body,h1,h2,h3,h4,h5 {font-family: "Proxima Nova", sans-serif}
 
 <div class="hero">
 	<img class="hero_img" src="./resources/mari_muri_3.jpg" alt="Mari e Muri 3">
+	<div id="mapas_container">
+		<form id="mapa_1" action="http://maps.google.com/maps" method="get" target="_blank">
+		<div class="form_item">
+			<p style="font-weight: bold;"><i class="fa-solid fa-church"></i> Cerimônia Religiosa: </p>
+		</div>
+		<div class="form_item">
+			<label for="saddr"><i class="fa-solid fa-location-dot"></i> Local de Partida:</label>
+			<input type="text" name="saddr" />
+		</div>
+		<div class="form_item">
+			<input type="hidden" name="daddr" value="Igreja São Benedito São Carlos" />
+			<i class="fa-solid fa-location-arrow"></i> <input class="submit_button" type="submit" value="Encontrar Rota!" />
+		</div>
+		</form>
+		<form id="mapa_2" action="http://maps.google.com/maps" method="get" target="_blank">
+		<div class="form_item">
+			<p style="font-weight: bold;"><i class="fa-solid fa-champagne-glasses"></i> Recepção: </p>
+		</div>
+		<div class="form_item">
+			<label for="saddr"><i class="fa-solid fa-location-dot"></i> Local de Partida:</label>
+			<input type="text" name="saddr" />
+		</div>
+		<div class="form_item">
+			<input type="hidden" name="daddr" value="Villagio Alvorada - São Carlos, SP" />
+			<i class="fa-solid fa-location-arrow"></i> <input class="submit_button" type="submit" value="Encontrar Rota!" />
+		</div>
+		</form>
+		</div>
+
 </div>
+
 
 <!-- js code for parallax effect -->
 <script>

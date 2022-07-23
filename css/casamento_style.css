@@ -115,3 +115,64 @@ a.anchor {
     top: -50px;
     visibility: hidden;
 }
+
+#mapa_1 {
+  display: block;
+  position: absolute;
+  text-align: center;
+  z-index: 9;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 10%;
+  overflow:auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 16pt;
+  border-radius: 7px;
+
+}
+
+#mapa_2 {
+  display: block;
+  position: absolute;
+  text-align: center;
+  z-index: 9;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 25%;
+  overflow:auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 16pt;
+  border-radius: 7px;
+
+}
+
+div.form_item {
+  display: block;
+  margin: 20px;
+}
+
+input {
+  font-size: 16pt;
+  border-width: 0px;
+  border-radius: 7px;
+}
+
+input.submit_button {
+  font-size: 16pt;
+  background-color: #06cf9c;
+  border-width: 0px;
+  cursor:pointer;
+  border-radius: 7px;
+}
+
+input.submit_button:hover {
+  background-color: green;
+  border-width: 0px;
+}
+
+#mapas_container{
+  display: block;
+
+}
