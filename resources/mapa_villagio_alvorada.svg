@@ -230,7 +230,7 @@
        transform="translate(0,1.0583333)"
        style="display:inline">
       <rect
-         style="opacity:0.5;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:bevel;paint-order:fill markers stroke"
+         style="opacity:0.5;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-linecap:round;stroke-linejoin:bevel;paint-order:fill markers stroke;stroke-miterlimit:4;stroke-dasharray:none"
          id="rect995"
          width="256.21027"
          height="258.09766"
