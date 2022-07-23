@@ -41,6 +41,13 @@ body,h1,h2,h3,h4,h5,input {font-family: "Proxima Nova", sans-serif}
 
 <div class="hero">
 	<img class="hero_img" src="./resources/mari_muri_1.jpg" alt="Mari e Muri 1">
+	<div id="horario_container">
+		<div class="horarios">
+		<p> 28 de Janeiro de 2023 </p>
+		<p> Cerimônia Religiosa: 10:30 </p>
+		<p> Recepção: 12:00 </p>
+		</div>
+	</div id="mapas_container">
 </div>
 
 <div class="spacing"></div>
@@ -48,6 +55,15 @@ body,h1,h2,h3,h4,h5,input {font-family: "Proxima Nova", sans-serif}
 
 <div class="hero">
 	<img class="hero_img" src="./resources/mari_muri_2.jpg" alt="Mari e Muri 2">
+	<div id="lista_container">
+		<div class="lista_de_presentes">
+			<ul>
+				<li>Tudo 😁</li>
+				<li>E mais um pouco 🤷‍</li>
+			</ul>
+		</div>
+	</div id="mapas_container">
+
 </div>
 
 <div class="spacing"></div>
@@ -56,7 +72,7 @@ body,h1,h2,h3,h4,h5,input {font-family: "Proxima Nova", sans-serif}
 <div class="hero">
 	<img class="hero_img" src="./resources/mari_muri_3.jpg" alt="Mari e Muri 3">
 	<div id="mapas_container">
-		<form id="mapa_1" action="http://maps.google.com/maps" method="get" target="_blank">
+		<form id="mapa_rota" action="https://maps.google.com/maps" method="get" target="_blank">
 		<div class="form_item">
 			<p style="font-weight: bold;"><i class="fa-solid fa-church"></i> Cerimônia Religiosa: </p>
 		</div>
@@ -66,10 +82,11 @@ body,h1,h2,h3,h4,h5,input {font-family: "Proxima Nova", sans-serif}
 		</div>
 		<div class="form_item">
 			<input type="hidden" name="daddr" value="Igreja São Benedito São Carlos" />
-			<i class="fa-solid fa-location-arrow"></i> <input class="submit_button" type="submit" value="Encontrar Rota!" />
+			<div class="submit_button_container"> &nbsp; <i class="fa-solid fa-location-arrow"></i> <input class="submit_button" type="submit" value="Encontrar Rota!" /></div>
 		</div>
 		</form>
-		<form id="mapa_2" action="http://maps.google.com/maps" method="get" target="_blank">
+		<img id="mapa_rota" src="./resources/mapa_villagio_alvorada.svg" alt="Mapa Villagio Alvorada">
+		<form id="mapa_rota" action="https://maps.google.com/maps" method="get" target="_blank">
 		<div class="form_item">
 			<p style="font-weight: bold;"><i class="fa-solid fa-champagne-glasses"></i> Recepção: </p>
 		</div>
@@ -79,7 +96,8 @@ body,h1,h2,h3,h4,h5,input {font-family: "Proxima Nova", sans-serif}
 		</div>
 		<div class="form_item">
 			<input type="hidden" name="daddr" value="Villagio Alvorada - São Carlos, SP" />
-			<i class="fa-solid fa-location-arrow"></i> <input class="submit_button" type="submit" value="Encontrar Rota!" />
+			<div class="submit_button_container"> &nbsp; <i class="fa-solid fa-location-arrow"></i> <input class="submit_button" type="submit" value="Encontrar Rota!" /></div>
+			
 		</div>
 		</form>
 		</div>
@@ -150,4 +168,21 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
+
+<div>
+  <footer class="footer">
+  <div class="side-layout">
+    <p style="font-family: IBM Plex Mono; font-weight:bold;"> <i class="far fa-copyright"></i> Murilo Henrique Moreira –
+      <script language="javascript"> 
+        months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 		 'November', 'December']; 
+		var theDate = new Date(document.lastModified); 
+		theDate.setTime((theDate.getTime()+(5000*60*60)) ) 
+		with (theDate) { 
+		document.write("Last updated "+getDate()+' '+months[getMonth()]+' '+getFullYear()+' '+getHours()+':'+getMinutes()+" GMT") 
+		} 
+		</script>
+    </p>
+  </div>  
+</footer>
+</div>
 </body>
