@@ -15,12 +15,12 @@ body,h1,h2,h3,h4,h5,input {font-family: "Proxima Nova", sans-serif}
 <body onload="startParallax()" onscroll="startParallax()">
 
 <div class="topnav">
-  <a class="disabled"><i class="fa-brands fa-pagelines"></i> &emsp; Mariana & Murilo</a>
-  <a class="active" onclick="stopParallax()" href="#top"><i class="fas fa-home"></i> Home</a>
-  <a class="active" onclick="stopParallax()" href="#horarios"><i class="fa-solid fa-clock"></i> Horários</a>
-  <a class="active" onclick="stopParallax()" href="#lista_presentes"><i class="fa-solid fa-gift"></i> Lista de Presentes</a>
-  <a class="active" onclick="stopParallax()" href="#mapa"><i class="fa-solid fa-map-location"></i> Mapa </a>
-  <a class="disabled"><i class="fa-brands fa-pagelines"></i> </a>
+  <a class="disabled"><div class="our_names"><i class="fa-brands fa-pagelines"></i> &ensp; Mariana & Murilo</a></div> 
+  <a class="active" onclick="stopParallax()" href="#top"><div class="nav_icon"><i class="fas fa-home"></i></div> <div class="link_labels">Home</div></a>
+  <a class="active" onclick="stopParallax()" href="#horarios"><div class="nav_icon"><i class="fa-solid fa-clock"></i></div> <div class="link_labels">Horários</div></a>
+  <a class="active" onclick="stopParallax()" href="#lista_presentes"><div class="nav_icon"><i class="fa-solid fa-gift"></i></div> <div class="link_labels">Lista de Presentes</div></a>
+  <a class="active" onclick="stopParallax()" href="#mapa"><div class="nav_icon"><i class="fa-solid fa-map-location"></i></div> <div class="link_labels">Mapa</div></a>
+  <a class="disabled"><div class="media_spacer">&ensp;</div><div class="our_names"><i class="fa-brands fa-pagelines"></i></div></a>
 
 </div>
 
@@ -85,7 +85,6 @@ body,h1,h2,h3,h4,h5,input {font-family: "Proxima Nova", sans-serif}
 			<div class="submit_button_container"> &nbsp; <i class="fa-solid fa-location-arrow"></i> <input class="submit_button" type="submit" value="Encontrar Rota!" /></div>
 		</div>
 		</form>
-		<img id="mapa_rota" src="./resources/mapa_villagio_alvorada.svg" alt="Mapa Villagio Alvorada">
 		<form id="mapa_rota" action="https://maps.google.com/maps" method="get" target="_blank">
 		<div class="form_item">
 			<p style="font-weight: bold;"><i class="fa-solid fa-champagne-glasses"></i> Recepção: </p>
@@ -100,6 +99,8 @@ body,h1,h2,h3,h4,h5,input {font-family: "Proxima Nova", sans-serif}
 			
 		</div>
 		</form>
+		<img id="mapa_rota" src="./resources/mapa_villagio_alvorada.svg" alt="Mapa Villagio Alvorada">
+		
 		</div>
 
 </div>

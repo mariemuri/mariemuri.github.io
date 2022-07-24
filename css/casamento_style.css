@@ -48,6 +48,100 @@ body {
   color: black;
 }
 
+.nav_icon{
+  display: inline-block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.our_names{
+  display: inline-block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.link_labels{
+  display: inline-block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.media_spacer{
+  display: none;
+}
+
+@media screen 
+ and (max-device-width: 480px) 
+ and (min-device-width: 100px)  {
+  .link_labels {
+    display: none;
+  }
+
+
+  .nav_icon{
+    display: inline-block;
+    color: dark;
+    text-align: center;
+    text-decoration: none;
+    font-size: 48px;
+    font-weight: bold;
+    }
+    .our_names{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 48px;
+  }
+
+  .topnav a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 48px;
+  }
+
+  .media_spacer{
+    display: inline-block;
+  }
+
+  #countdown_div{  
+    position: absolute;
+    text-align: center;
+    z-index: 9;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 7px;
+    padding: 20px;
+    display: block;
+    top: 160px !important;
+    width: 60%;
+  }
+
+  #mapa_rota {
+    display: block;
+    text-align: center;
+    z-index: 9;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 16pt;
+    border-radius: 7px;
+    margin-bottom: 50px;
+    overflow: visible !important;
+    width: 300px;
+  }
+
+}
+
 
 @font-face {
   font-family: 'Proxima Nova';
@@ -94,10 +188,12 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  top: 10%;
   background-color: rgba(255, 255, 255, 0.65);
   border-radius: 7px;
   padding: 20px;
+  display: block;
+  top: 70px;
+  width: 60%;
 }
 
 #countdown {
@@ -126,11 +222,11 @@ a.anchor {
   display: block;
   text-align: center;
   z-index: 9;
-  overflow:auto;
   background-color: rgba(255, 255, 255, 0.5);
   font-size: 16pt;
   border-radius: 7px;
   margin-bottom: 50px;
+  overflow: visible !important;
 }
 
 div.form_item {
@@ -181,7 +277,9 @@ input.submit_button:hover {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   top: 20px;
-}
+  margin-bottom: 30px;
+
+ }
 
 #lista_container{
   display: block;
@@ -191,7 +289,7 @@ input.submit_button:hover {
   transform: translateX(-50%);
   top: 20px;
   width: 60%;
-
+  margin-bottom: 30px;
 }
 
 .lista_de_presentes {
@@ -214,7 +312,6 @@ input.submit_button:hover {
   transform: translateX(-50%);
   top: 20px;
   width: 60%;
-
 }
 
 .horarios {
@@ -236,3 +333,4 @@ input.submit_button:hover {
     text-align: center;
     height: fit-content;
 }
+
